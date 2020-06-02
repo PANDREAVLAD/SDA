@@ -21,7 +21,7 @@ public class Square implements Shape{
 		this.validateDimensions=new ShapeDimensionsValidator();
 	}
 	
-	public double getArea() {//returneaza aria la patrat
+	public double getArea() {
 
 		 boolean ok=validateDimensions.validateSquare(size);
 			
@@ -54,26 +54,14 @@ public class Square implements Shape{
 		  return  fillColor;	
 		
 		return "\0";
-		
-		
+			
 			
 	}
 	
-	/*public void Draw() {
-		for(int i=0;i<size;i++)
-			for(int j=0;j<size;j++) {
-				if(i==0 || i==size) {
-					System.out.print("*");
-				}
-				if(j==0 || j==size)
-					System.out.println("*");
-				else {
-					System.out.println(" ");
-				}
-			}*/
+
 			
 	
-	public void Draw() {
+	public void draw() {
 		
 	String a[][]=new String[size][size];
 	
@@ -117,8 +105,7 @@ public class Square implements Shape{
 		    System.out.println();
 		}
 		    	
-	}
-	
+	}	
 }
 
 

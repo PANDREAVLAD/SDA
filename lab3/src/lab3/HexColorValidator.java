@@ -4,7 +4,7 @@ public class HexColorValidator {
 	Boolean validate(String colorHex ) {
 		
 		Boolean ok=true;	
-		//int numberOfCharacters=0;
+	
 	
 	
 			if(colorHex.charAt(0)!='#')
@@ -14,14 +14,6 @@ public class HexColorValidator {
 				
 		   }
 			
-			//int j=1;
-			
-		//  do {
-			 //  numberOfCharacters++;
-			  // colorHex.substring(1, colorHex.length()-1);
-			  // j++;
-			   
-		  // }while(colorHex.charAt(j)!='#');
 		
 			if(colorHex.length()>7)
 			{

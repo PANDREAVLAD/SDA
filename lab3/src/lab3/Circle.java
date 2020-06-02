@@ -21,7 +21,7 @@ private static final String NUME_CONSTANTA="Circle";
 		this.validateDimensions=new ShapeDimensionsValidator();
 	}
 	
-	public double getArea() {//returneaza aria la patrat
+	public double getArea() {
 		
 		 boolean ok=validateDimensions.validateCircle(radius);
 			
@@ -60,7 +60,7 @@ private static final String NUME_CONSTANTA="Circle";
 	}
 	
 	
-	public void Draw() {
+	public void draw() {
 		int posX=6;
 		int posY=6;
 		
@@ -75,9 +75,6 @@ private static final String NUME_CONSTANTA="Circle";
 		            }
 		        }
 		        System.out.println();
-		    }
-	
-	   
-		    	
+		    }		    	
 	}
 }

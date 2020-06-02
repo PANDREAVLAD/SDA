@@ -75,23 +75,23 @@ public class tema1 {
 
 	public static int getMaxSpeedLimitBySwitch(String roadType) {
 		switch (roadType) {
-		case "Drum Express": {
+		case "Drum Express": 
 			System.out.println(roadType);
 			return 100;
-		}
-		case "Oras": {
+		
+		case "Oras": 
 			System.out.println(roadType);
 			return 50;
 
-		}
-		case "Zona rezidentiala": {
+		
+		case "Zona rezidentiala": 
 			System.out.println(roadType);
 			return 50;
-		}
-		case "autostrada": {
+		
+		case "autostrada": 
 			System.out.println(roadType);
 			return 130;
-		}
+		
 		}
 
 		return 0;

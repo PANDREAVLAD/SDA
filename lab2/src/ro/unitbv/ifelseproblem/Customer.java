@@ -1,9 +1,9 @@
 package ro.unitbv.ifelseproblem;
 
 public class Customer {
-	String LastName;
-	String FirstName;
-	int age;
+	private String LastName;
+	private String FirstName;
+	private int age;
 	private Adress adress;
 	private PaymentMethod paymentMethod;
 	public String getLastName() {

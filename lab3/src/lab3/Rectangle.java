@@ -10,6 +10,7 @@ public class Rectangle implements Shape {
 	private HexColorValidator validateHex;
 	private BorderClassValidator validateBorder;
 	private ShapeDimensionsValidator validateDimensions;
+	
 
 	public Rectangle(String fillColor, int borderWidth, int width, int height) {
 		this.fillColor = fillColor;
@@ -22,7 +23,7 @@ public class Rectangle implements Shape {
 
 	}
 
-	public double getArea() {// returneaza aria la patrat
+	public double getArea() {
 		
 		   boolean ok=validateDimensions.validateRectangle(width, height);
 			
@@ -54,7 +55,7 @@ public class Rectangle implements Shape {
 		
 	}
 
-	public void Draw() {
+	public void draw() {
 
 		String a[][] = new String[width][height];
 
@@ -89,7 +90,8 @@ public class Rectangle implements Shape {
 			for (int j = 0; j < height; j++)
 				System.out.print(a[i][j] + " ");
 			System.out.println();
-		}
+		}	  
 
 	}
+	
 }

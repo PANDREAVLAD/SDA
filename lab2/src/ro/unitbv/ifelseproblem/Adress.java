@@ -1,9 +1,9 @@
 package ro.unitbv.ifelseproblem;
 
 public class Adress {
-	String street;
-	String city;
-	int number;
+	private String street;
+	private String city;
+	private int number;
 	public String getStreet() {
 		return street;
 	}
@@ -16,11 +16,11 @@ public class Adress {
 		return number;
 	}
 
-	public Adress(String City, String Street, int Number)
+	public Adress(String city, String street, int number)
 	{
-		city=City;
-		street=Street;
-		number=Number;
+		this.city=city;
+		this.street=street;
+		this.number=number;
 		
 	}
 	public String getCompleteAdress()
